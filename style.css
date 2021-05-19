@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'warnesregular';
+    src: url('warnes-regular-webfont.eot');
+    src: url('warnes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('warnes-regular-webfont.woff2') format('woff2'),
+         url('warnes-regular-webfont.woff') format('woff'),
+         url('warnes-regular-webfont.ttf') format('truetype'),
+         url('warnes-regular-webfont.svg#warnesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* NavBar */
+header {
+    background-image: linear-gradient(
+        rgba(0, 242, 96, 0.4),
+        rgba(7, 117, 230, 0.3)
+      ),
+      url(header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+#navi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-family: 'warnesregular';
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 35%;
+}
+
+#nav-menu li {
+    list-style: none;
+}
+
+#slogan {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+#slogan-text {
+    margin-bottom: 10px;
+}
+
+#slogan h1 {
+    font-size: 55px;
+    font-weight: bolder;  
+}
+
+#slogan h2 {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.header-contact-button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+
+.header-island-button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(127, 255, 249);
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: rgba(7, 117, 230, 0.3)
+}
+
+/* Qui sommes-nous section */
+
+#who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+}
+
+#who-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#who-contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#who-text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#who-text h3 {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+#who-text p {
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.who-histoire {
+    display: flex;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.right-margin-icon {
+    margin-left: 25px;
+}
+
+/* ligne titre*/
+.ligne-titre::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to left,rgba(0, 242, 96, 0.4),rgba(7, 117, 230, 0.3));
+    width: 140px;
+    height: 4px;
+    bottom: 0px;
+    left: 30%;
+}
+
+.ligne-titre {
+    position: relative;
+}
+
+.far {
+    transition-duration: 0.75s;
+}
+
+.far:hover {
+    translate: 15px;
+    transition-duration: 0.75s;
+}
+
+/* Section ile */
+
+#background-ile {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: aqua;    
+}
+
+#background-ile h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.cadre-lieux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 20vw;
+    height: 550px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#lieux-touristiques {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.photo-ville {
+    width: 300px;
+    height: 300px;
+    background-image: url('stone-town.png');
+    background-size: contain;
+}
+
+.photo-ile {
+    width: 300px;
+    height: 300px;
+    background-image: url('prison-island.png');
+    background-size: contain;
+}
+
+.photo-parc {
+    width: 300px;
+    height: 300px;
+    background-image: url('parc-national-jozani.png');
+    background-size: contain;
+}
+
+#lieux-touristiques h4{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#lieux-touristiques p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Galeries Photos */
+#background-galerie {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#background-galerie h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#photos-ligne1 {
+    display: flex;
+    width: 62vw;
+    justify-content: space-between;
+}
+
+.cadre-galerie1 {
+    width: 20vw;
+}
+
+.cadre-galerie2 {
+    width: 40vw;
+
+}
+
+.cadre-galerie3 {
+    width: 23vw;
+
+}
+
+.cadre-galerie4 {
+    width: 15vw;
+
+}
+
+#photos-ligne2 {
+    display: flex;
+    width: 62vw;
+    justify-content: space-between;
+}
+
+.galerie-img {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+  }
+
+/* Ils ont adoré */
+#background-love {
+    height: 50vh;
+    background-image: url('the-paysage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+#background-love h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#temomignages {
+    display: flex;
+}
